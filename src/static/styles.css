@@ -70,8 +70,50 @@ section h3 {
   color: #0066cc;
 }
 
-.activity-card p {
-  margin-bottom: 8px;
+/* New: participants section inside activity cards */
+.activity-card .participants {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #eee;
+}
+
+.activity-card .participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.participants-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+  max-height: 96px; /* limit height for long lists */
+  overflow-y: auto;
+}
+
+.participants-list li {
+  padding: 6px 4px;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  font-size: 14px;
+  color: #444;
+}
+
+/* nicer empty state when no participants */
+.participants-empty {
+  font-style: italic;
+  color: #777;
+  font-size: 14px;
+  margin: 4px 0 0 0;
+}
+
+/* subtle helper text near headings */
+.subtle {
+  display: inline-block;
+  font-size: 13px;
+  color: #666;
+  font-weight: 400;
+  margin-left: 8px;
 }
 
 .form-group {
